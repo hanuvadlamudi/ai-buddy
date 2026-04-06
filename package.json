@@ -1,0 +1,18 @@
+{
+  "name": "ai-budddy",
+  "version": "1.0.0",
+  "description": "A multi-component project with a Next.js frontend and a Node.js Express backend.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend/ai-buddy\" \"npm run dev --prefix backend\"",
+    "install:all": "npm install && npm install --prefix frontend/ai-buddy && npm install --prefix backend",
+    "build:all": "npm run build --prefix frontend/ai-buddy && npm run build --prefix backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
