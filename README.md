@@ -37,6 +37,15 @@ You can run both the frontend and backend simultaneously using the root scripts:
 npm run dev
 ```
 
+### Database Management
+
+The project uses Drizzle ORM for database management. Run these commands from the **root directory**:
+
+- **Sync Schema:** `npm run db:push` (Syncs your local schema with the database)
+- **Open Studio:** `npm run db:studio` (Opens the visual database editor at https://local.drizzle.studio)
+
+### Individual Components
+
 Or run them individually:
 
 - **Frontend:** `cd frontend/ai-buddy && npm run dev` (Runs on http://localhost:3000)
